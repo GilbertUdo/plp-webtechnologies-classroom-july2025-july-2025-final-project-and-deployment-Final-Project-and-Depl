@@ -1,0 +1,34 @@
+body { margin:0; font-family: Arial, sans-serif; line-height:1.6; }
+header { background:#c2185b; padding:1rem; color:white; }
+.navbar { display:flex; justify-content:space-between; align-items:center; }
+.nav-links { list-style:none; display:flex; gap:1rem; }
+.nav-links a { color:white; text-decoration:none; }
+.nav-links a.active { border-bottom:2px solid white; }
+.menu-toggle { display:none; }
+
+/* Hero */
+.hero { height:90vh; display:flex; flex-direction:column; justify-content:center; align-items:center; background:url('../images/salon-bg.jpg') no-repeat center/cover; color:white; text-align:center; }
+.btn { background:#f06292; padding:10px 20px; border:none; color:white; border-radius:5px; text-decoration:none; }
+
+/* Highlights */
+.highlights { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; padding:2rem; }
+.card { background:#fff0f6; padding:1.5rem; border-radius:8px; text-align:center; }
+
+/* Gallery */
+.gallery .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; padding:1rem; }
+.gallery img { width:100%; border-radius:8px; }
+
+/* Contact */
+.contact form { display:flex; flex-direction:column; gap:1rem; width:300px; margin:auto; }
+.contact input, .contact textarea { padding:10px; border:1px solid #ccc; border-radius:5px; }
+.contact button { background:#c2185b; color:white; padding:10px; border:none; border-radius:5px; }
+
+/* Footer */
+footer { background:#c2185b; color:white; text-align:center; padding:1rem; }
+
+/* Responsive */
+@media(max-width:768px){
+  .nav-links { display:none; flex-direction:column; background:#c2185b; position:absolute; top:60px; right:10px; }
+  .nav-links.active { display:flex; }
+  .menu-toggle { display:block; background:none; border:none; font-size:1.5rem; color:white; }
+}
